@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const ai = new GoogleGenAI({ apiKey: "AQ.Ab8RN6LTQoZDjI_LydG4YHsHeSrhAK_2EzTKzDcPo-hecfnWfA" });
+const ai = new GoogleGenAI({ apiKey: "AQ.Ab8RN6K0a_gEAz_qC9HT4rWoMeVCmRWNcgMTSM3UOWcnK06p0Q" });
 
 app.post('/api/chat', async (req, res) => {
     try {
@@ -28,4 +28,3 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
-
